@@ -8,13 +8,14 @@ img{
     max-width: 100%;
 }
 body {
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 1.5;
 }
-/*Estilos del header*/
+/*----------Estilos del header----------*/
 .header{
     height: 60px;
 }
@@ -24,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo, .icon-menu {
     margin: 5px;
+    color:black;
 }
 .icon-menu{
     display: block;
@@ -31,19 +33,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 40px;
     font-size: 30px;
     background:yellowgreen ;
-    color: white; 
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
     margin-left: auto;
     cursor: pointer;
 }
+/*---------------Estilos del menu------------------*/ 
 .nav{
     position: absolute;
     top: 60px;
-    left: 0; 
+    left: -100%; 
     width: 100%;
-}
+    transition:all 0.4s;
+    
+} 
 .menu{
     list-style: none;
     padding: 0;
@@ -56,7 +60,29 @@ background: yellowgreen;
 text-decoration: none;
 color: white;
 }
-.menu__link:hover{
+.menu__link:hover, .select{
     background: white;
     color:yellowgreen;
+}
+.mostrar {
+  left: 0;
+}
+/*--------------------Estilos del banner------------------------*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+.banner__txt{
+    display: none;
 }
