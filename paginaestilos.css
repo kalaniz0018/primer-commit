@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 *{
     box-sizing: border-box;
 }
@@ -13,20 +13,24 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
 }
 .section__titulo{
     text-align: center;
     font-size: 40px;
     color: yellowgreen;
 }
+.contenedor {
+    margin: auto;
+    width: 99%;
+  }
 /*----------Estilos del header----------*/
 .header{
     height: 60px;
 }
 .header .contenedor{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 .logo, .icon-menu {
     margin: 5px;
@@ -119,22 +123,26 @@ margin-bottom: 30px;
     margin: 5px 0;
 
 }
+.cursos__img {
+    width: 100%;
+  }
 /*--------------------------Estilo de footer---------------------------------*/
 .footer{
     background: #333;
-    color: white;
+    color: #fff ;
     padding:10px;
     text-align: center;
 }
 .footer .social [class^="icon-"] {
     display: inline-block ;
-color: #fff;
-text-decoration:none;
-font-size: 30px;
-padding: 10px;
-background: white;
-border-radius: 50%;
-width: 50px;
-height: 50px;
-line-height: 40px ;
+    color: #333;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px ;
 }
+
